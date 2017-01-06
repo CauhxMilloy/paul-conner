@@ -1,1 +1,116 @@
-{{ content }}
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+		<title>Paul-Conner.com</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="headerTop">
+				<div class="logoText disableHighlight">
+					Paul-Conner.com
+				</div>
+				<div class="logoSubText disableHighlight">
+					A personal portfolio by and about Paul Conner
+				</div>
+			</div>
+			<nav class="navbar navbar-default">
+				<ul class="nav navbar-nav">
+					<li {% if page.activeTab == 'home' %} class="active" {% endif %}>
+						<a class="disableHighlight" href="/" >Welcome</a>
+					</li>
+					<li {% if page.activeTab == 'about' %} class="active" {% endif %}>
+						<a class="disableHighlight" href="/about" >About Me</a>
+					</li>
+					<li {% if page.activeTab == 'resume' %} class="active" {% endif %}>
+						<a class="disableHighlight" href="/resume" >Resume</a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle disableHighlight" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							School Projects
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a class="disableHighlight" href="/projFS" >
+									Factory Simulation
+								</a>
+							</li>
+							<li>
+								<a class="disableHighlight" href="/projCJ">
+									Colossal Journey
+								</a>
+							</li>
+							<li>
+								<a class="disableHighlight" href="/projDS">
+									Danger Space
+								</a>
+							</li>
+							<li>
+								<a class="disableHighlight" href="/projA">
+									AMAZEing
+								</a>
+							</li>
+							<li>
+								<a class="disableHighlight" href="/projMM">
+									Murder Mansion
+								</a>
+							</li>
+							<li>
+								<a class="disableHighlight" href="/projSE">
+									Shadow's Edge
+								</a>
+							</li>
+							<li>
+								<a class="disableHighlight" href="/projUT">
+									Usability Testing
+								</a>
+							</li>
+							<li>
+								<a class="disableHighlight" href="/projC">
+									Conclave
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle disableHighlight" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+							Personal Projects
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a class="disableHighlight">
+									Twilight Horizon Ent.
+								</a>
+							</li>
+							<li>
+								<a class="disableHighlight">
+									Mincraft Engineering
+								</a>
+							</li>
+							<li>
+								<a class="disableHighlight">
+									Multi-Viewtube
+								</a>
+							</li>
+							<li>
+								<a class="disableHighlight">
+									SVN Guide
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="contentContainer">
+				{{ content }}
+			</div>
+		</div>
+	</body>
+</html>
