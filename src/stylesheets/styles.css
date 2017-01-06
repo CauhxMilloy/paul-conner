@@ -114,29 +114,6 @@ html, body
 	padding-top: 30px;
 }
 
-
-
-
-
-
-a.noLinkIndication
-{
-	text-decoration:none;
-}
-a.noLinkIndication:link {color:#000000;}
-a.noLinkIndication:visited {color:#000000;}
-a.noLinkIndication:hover {color:#000000;}
-a.noLinkIndication:active {color:#000000;}
-
-a.underLineAndCursorLinkOnly
-{
-	cursor:pointer;
-}
-a.underLineAndCursorLinkOnly:link {color:#000000;}
-a.underLineAndCursorLinkOnly:visited {color:#000000;}
-a.underLineAndCursorLinkOnly:hover {color:#000000;}
-a.underLineAndCursorLinkOnly:active {color:#000000;}
-
 .disableHighlight
 {
 	cursor: pointer;
@@ -148,10 +125,3 @@ a.underLineAndCursorLinkOnly:active {color:#000000;}
 	-ms-user-select: none;
 	user-select: none;
 }
-
-
-
-
-
-
-
