@@ -1,4 +1,4 @@
-source: src
+#source: src
 destination: _site
 timezone: america/los_angeles
 encoding: utf-8
